@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="cs">
+    <head>
+        <title>Hra kostky</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="../Casino/css/style.css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <header class="jumbotron bg-warning">
+            <h1 class="display-3 text-light text-center">Casino</h1>
+        </header>
+        <main class="container">
+            <h1 class="display-3 text-light text-center">Dostihy</h1>
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <img src="img/kostka1.png" alt="player1" id="dice1">
+                </div>
+                <div class="col-md-6">
+                    <img src="img/kostka6.png" alt="player2" id="dice2">
+                </div>
+                <div class="col-md-6">
+                    <img src="img/kostka7.png" alt="player3" id="dice3">
+                </div>
+                <div class="col-md-6">
+                    <img src="img/kostka9.png" alt="player4" id="dice4">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-12">
+                    <img src="img/player1.jpg" id="player1" width="100" style="position: relative">
+                </div>
+                <div class="col-md-12">
+                    <img src="img/player2.jpg" id="player2" width="100" style="position: relative">
+                </div>
+                <div class="col-md-12">
+                    <img src="img/player3.jpg" id="player3" width="100" style="position: relative">
+                </div>
+                <div class="col-md-12">
+                    <img src="img/player4.jpg" id="player4" width="100" style="position: relative">
+                </div>
+            </div>   
+
+            <div>
+                <button class="btn btn-danger" id="play">HREJ</button>
+            </div>
+
+           
+                <div class="form-group row" id="data_block">
+                    <label class="col-sm-2 col-form-label text-light">Hráč 1</label>
+                    <div class="col-sm-3">
+                        <input type="number" class="form-control" min="1" max="4"  value="0">
+                    </div>
+                </div>
+                <div class="form-group row" id="speed_block">
+                    <label class="col-sm-2 col-form-label text-light">Hráč 2</label>
+                    <div class="col-sm-3">
+                        <input type="number" class="form-control" min="1" max="4"  value="0">
+                    </div>
+                </div>   
+                <div class="form-group row" >
+                    <label class="col-sm-2 col-form-label text-light">Hráč 3</label>
+                    <div class="col-sm-3">
+                        <input type="number" class="form-control" min="1" max="4"  value="0">
+                    </div>
+                </div>
+                <div class="form-group row" >
+                    <label class="col-sm-2 col-form-label text-light">Hráč 4</label>
+                    <div class="col-sm-3">
+                        <input type="number" class="form-control" min="1" max="4"  value="0">
+                    </div>
+                </div>    
+            
+
+
+            <div class="row mt-3">
+                <div id="result1" class="col-md-6 alert alert-warning">Hráč 1</div>
+                <div id="result2" class="col-md-6 alert alert-warning">Hráč 2</div>
+                <div id="result3" class="col-md-6 alert alert-warning">Hráč 3</div>
+                <div id="result4" class="col-md-6 alert alert-warning">Hráč 4</div>
+            </div>
+
+
+
+
+
+
+
+
+            <h1 class="display-3 text-light text-center">Kostka</h1>
+
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <img src="img/kostka1.png" alt="player1" id="dice5">
+                </div>
+            </div> 
+            <div id="result5" class="col-md-6 alert alert-warning">Hráč 1</div>
+            <div>
+                <button class="btn btn-danger" id="plays">HREJ</button>
+            </div>
+
+            <div class="form-group row" >
+            <label for="weight" class="col-sm-2 col-form-label text-light">Kostka</label>
+            <div class="col-sm-3">
+                <input type="number" class="form-control" min="1" max="9" id="weight" value="0">
+            </div>
+        </div>
+
+
+
+            <h1 class="display-3 text-light text-center">Kostky</h1>
+
+            <div class="row mt-3">
+                <div class="col-md">
+                    <img src="img/kostka1.png" alt="player1" id="dice6">
+                </div>
+                <div class="col-md">
+                    <img src="img/kostka6.png" alt="player1" id="dice7">
+                </div>
+                <div class="col-md">
+                    <img src="img/kostka7.png" alt="player1" id="dice8">
+                </div>
+                <div class="col-md">
+                    <img src="img/kostka9.png" alt="player1" id="dice9">
+                </div>
+            </div> 
+            <div class="row mt-3">
+            <div id="result6" class="col-md-6 alert alert-warning">Hráč 1</div>
+            <div id="result7" class="col-md-6 alert alert-warning">Hráč 2</div>
+            <div id="result8" class="col-md-6 alert alert-warning">Hráč 3</div>
+            <div id="result9" class="col-md-6 alert alert-warning">Hráč 4</div>
+        </div> 
+            <div>
+                <button class="btn btn-danger" id="play1">HREJ</button>
+            </div>
+
+
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label text-light">Hráč 1</label>
+                <div class="col-sm-3">
+                    <input type="number" class="form-control" min="1" max="9"  value="0">
+                </div>
+            </div>
+            <div class="form-group row" >
+                <label class="col-sm-2 col-form-label text-light">Hráč 2</label>
+                <div class="col-sm-3">
+                    <input type="number" class="form-control" min="1" max="9"  value="0">
+                </div>
+            </div>   
+            <div class="form-group row" >
+                <label class="col-sm-2 col-form-label text-light">Hráč 3</label>
+                <div class="col-sm-3">
+                    <input type="number" class="form-control" min="1" max="9"  value="0">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label text-light">Hráč 4</label>
+                <div class="col-sm-3">
+                    <input type="number" class="form-control" min="1" max="9"  value="0">
+                </div>
+            </div>    
+
+
+            <h1 class="display-3 text-light text-center">Trio kostka</h1>
+            <div class="row mt-3">
+                <div class="col-md">
+                    <img src="img/kostka1.png" alt="player1" id="dice10">
+                </div>
+                <div class="col-md">
+                    <img src="img/kostka6.png" alt="player1" id="dice11">
+                </div>
+                <div class="col-md">
+                    <img src="img/kostka9.png" alt="player1" id="dice12">
+                </div>
+     
+            </div> 
+            <div class="row mt-3">
+            <div id="result10" class="col-md-6 alert alert-warning">Hráč 1</div>
+            <div id="result11" class="col-md-6 alert alert-warning">Hráč 2</div>
+            <div id="result12" class="col-md-6 alert alert-warning">Hráč 3</div>
+        </div>
+            <div>
+                <button class="btn btn-danger" id="play2">HREJ</button>
+            </div>
+
+            <div class="form-group row" >
+                <label class="col-sm-2 col-form-label text-light">Hráč 1</label>
+                <div class="col-sm-3">
+                    <input type="number" class="form-control" min="1" max="9"  value="0">
+                </div>
+            </div>
+            <div class="form-group row" >
+                <label class="col-sm-2 col-form-label text-light">Hráč 2</label>
+                <div class="col-sm-3">
+                    <input type="number" class="form-control" min="1" max="9"  value="0">
+                </div>
+            </div>   
+            <div class="form-group row" >
+                <label class="col-sm-2 col-form-label text-light">Hráč 3</label>
+                <div class="col-sm-3">
+                    <input type="number" class="form-control" min="1" max="9"  value="0">
+                </div>
+            </div>
+
+
+
+            <h1 class="display-3 text-light text-center">Duel</h1>
+            <div class="row mt-3">
+                <div class="col-md">
+                    <img src="img/kostka1.png" alt="player1" id="dice13">
+                </div>
+                <div class="col-md">
+                    <img src="img/kostka9.png" alt="player1" id="dice14">
+                </div>
+            </div> 
+            <div class="row mt-3">
+            <div id="result13" class="col-md-6 alert alert-warning">Hráč 1</div>
+            <div id="result14" class="col-md-6 alert alert-warning">Hráč 2</div>
+        </div>
+            <div>
+                <button class="btn btn-danger" id="play3">HREJ</button>
+            </div>
+
+            <div class="form-group row" >
+                <label class="col-sm-2 col-form-label text-light">Hráč 1</label>
+                <div class="col-sm-3">
+                    <input type="number" class="form-control" min="1" max="9"  value="0">
+                </div>
+            </div>
+            <div class="form-group row" >
+                <label class="col-sm-2 col-form-label text-light">Hráč 2</label>
+                <div class="col-sm-3">
+                    <input type="number" class="form-control" min="1" max="9"  value="0">
+                </div>
+            </div>   
+
+            <h1 class="display-3 text-light text-center">Šesti kostka</h1>
+            <div class="row mt-3">
+                <div class="col-md">
+                    <img src="img/kostka1.png" alt="player1" id="dice15">
+                </div>
+                <div class="col-md">
+                    <img src="img/kostka6.png" alt="player1" id="dice16">
+                </div>
+                <div class="col-md">
+                    <img src="img/kostka9.png" alt="player1" id="dice17">
+                </div>
+                <div class="col-md">
+                    <img src="img/kostka9.png" alt="player1" id="dice18">
+                </div>
+                <div class="col-md">
+                    <img src="img/kostka6.png" alt="player1" id="dice19">
+                </div>
+                <div class="col-md">
+                    <img src="img/kostka1.png" alt="player1" id="dice20">
+                </div>
+            </div> 
+            <div>
+                <button class="btn btn-danger" id="play4">HREJ</button>
+            </div>
+
+            <div class="form-group row" >
+                <label class="col-sm-2 col-form-label text-light">Hráč 1</label>
+                <div class="col-sm-3">
+                    <input type="number" class="form-control" min="1" max="9"  value="0">
+                </div>
+            </div>
+            <div class="form-group row" >
+                <label class="col-sm-2 col-form-label text-light">Hráč 2</label>
+                <div class="col-sm-3">
+                    <input type="number" class="form-control" min="1" max="9"  value="0">
+                </div>
+            </div>   
+            <div class="form-group row" >
+                <label class="col-sm-2 col-form-label text-light">Hráč 3</label>
+                <div class="col-sm-3">
+                    <input type="number" class="form-control" min="1" max="9"  value="0">
+                </div>
+            </div>
+            <div class="form-group row" >
+                <label class="col-sm-2 col-form-label text-light">Hráč 4</label>
+                <div class="col-sm-3">
+                    <input type="number" class="form-control" min="1" max="9"  value="0">
+                </div>
+            </div>   
+            <div class="form-group row" >
+                <label class="col-sm-2 col-form-label text-light">Hráč 5</label>
+                <div class="col-sm-3">
+                    <input type="number" class="form-control" min="1" max="9"  value="0">
+                </div>
+            </div>
+            <div class="form-group row" >
+                <label class="col-sm-2 col-form-label text-light">Hráč 6</label>
+                <div class="col-sm-3">
+                    <input type="number" class="form-control" min="1" max="9"  value="0">
+                </div>
+            </div>   
+
+            <div class="row mt-3">
+                <div id="result15" class="col-md-6 alert alert-warning">Hráč 1</div>
+                <div id="result16" class="col-md-6 alert alert-warning">Hráč 2</div>
+                <div id="result17" class="col-md-6 alert alert-warning">Hráč 3</div>
+                <div id="result18" class="col-md-6 alert alert-warning">Hráč 4</div>
+                <div id="result19" class="col-md-6 alert alert-warning">Hráč 5</div>
+                <div id="result20" class="col-md-6 alert alert-warning">Hráč 6</div>
+            </div>
+
+            <h1 class="display-3 text-light text-center">New games coming soon.</h1>
+            <h1 class="display-3 text-light text-center">Pravidla</h1>
+           
+            <h2 class="display-3 text-light">Dostihy</h2>
+            
+            <p class="text-light">Hráči si vyberou za jakou postavičku budou hrát.</p>
+            <p class="text-light">Poté si dáte limit, který chcete překročit.</p>
+            <p class="text-light">Poté hrajete za pomocí tlačítka start</p>
+            <p class="text-light">Poté co dohrajete můžete hrát znovu za pomocí refreshnutí stránky.</p>
+           
+            <h2 class="display-3 text-light">Kostka</h2>
+           
+            <p class="text-light">Hráč/i si vyberou číslo, které chtějí aby padlo.</p>
+            <p class="text-light">Poté co si vyberou začnou hrát.</p>
+            <p class="text-light">Poté co dohrajou můžou hru resetovat za pomocí refreshnutí stránky.</p>
+           
+            <h2 class="display-3 text-light">Kostky</h2>
+           
+                <p class="text-light">Hráči si vyberou, která kostka podle nich vyhraje.</p>
+                <p class="text-light">Pokud chtějí hrát na co nejmenší nebo největší číslo, tak to je jen na nich.</p>
+                <p class="text-light">Poté co dohrajou můžou hru resetovat za pomocí refreshnutí stránky.</p>
+           
+            <h2 class="display-3 text-light">Trio kostka</h2>
+           
+                <p class="text-light">Hráči si vyberou, která kostka podle nich vyhraje.</p>
+                <p class="text-light">Pokud chtějí hrát na co nejmenší nebo největší číslo, tak to je jen na nich.</p>
+                <p class="text-light">Poté co dohrajou můžou hru resetovat za pomocí refreshnutí stránky.</p>
+            
+            <h2 class="display-3 text-light">Duel</h2>
+           
+                <p class="text-light">Hráči si vyberou, která kostka podle nich vyhraje.</p>
+                <p class="text-light">Pokud chtějí hrát na co nejmenší nebo největší číslo, tak to je jen na nich.</p>
+                <p class="text-light">Poté co dohrajou můžou hru resetovat za pomocí refreshnutí stránky.</p>
+            
+            <h2 class="display-3 text-light">Šesti kostka</h2>
+            
+                <p class="text-light">Hráči si vyberou, která kostka podle nich vyhraje.</p>
+                <p class="text-light">Pokud chtějí hrát na co nejmenší nebo největší číslo, tak to je jen na nich.</p>
+                <p class="text-light">Poté co dohrajou můžou hru resetovat za pomocí refreshnutí stránky.</p>
+                <p>.</p>
+                <p>.</p>
+           
+   
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="js/hra.js"></script>
+        </main>
+    </body>
+</html>
